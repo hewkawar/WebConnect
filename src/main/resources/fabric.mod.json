@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "webconnect",
+	"version": "${version}",
+	"name": "WebConnect",
+	"description": "WebConnect for 1.20",
+	"authors": [
+		"HewkawAr"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/webconnect/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xyz.hewkawar.webconnect.WebConnect"
+		],
+		"client": [
+			"xyz.hewkawar.webconnect.WebConnectClient"
+		],
+		"fabric-datagen": [
+			"xyz.hewkawar.webconnect.WebConnectDataGenerator"
+		]
+	},
+	"mixins": [
+		"webconnect.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
